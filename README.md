@@ -28,6 +28,8 @@ g++ -std=c++17 -Wall -Wshadow -O3 -march=native -o "%e" "%f"
 
 Set the path to the `clang-format` executable, or simply use `clang-format` if it’s in the `PATH` environment variable.
 
+download clang-fomat file here [.clang-formate](https://gist.github.com/idelsink/c25049d8c987890935f4)
+
 ```plaintext
 D:/CP/clang-format/clang-format.exe
 ```
