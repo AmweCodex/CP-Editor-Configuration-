@@ -9,7 +9,7 @@ This is my setup for the CP-Editor tool.
 This is an almost optimal command for compiling C++ code with speed in mind:
 
 ```bash
-g++ -std=c++17 -Wall -Wshadow -O3 -march=native -o "%e" "%f"
+g++ -std=c++17 -Wall -Wshadow -O2 -o "%e"
 ```
 
 ### Explanation of Flags
@@ -18,9 +18,7 @@ g++ -std=c++17 -Wall -Wshadow -O3 -march=native -o "%e" "%f"
 - `-Wall`: Enables most of the commonly used warning messages.
 - `-Wshadow`: Warns about variable shadowing.
 - `-O3`: The highest level of optimization focusing on performance, which can make the compiled program faster. It performs more aggressive optimizations compared to `-O2`.
-- `-march=native`: Optimizes the code for the architecture of the machine on which it's being compiled, potentially resulting in faster execution.
 - `-o "%e"`: Specifies the output filename (`%e` is typically replaced by the output filename in some IDEs or build systems).
-- `"%f"`: Refers to the input source file(s). Ensure to include this if it's required by your setup.
 
 ## Clang Format
 
